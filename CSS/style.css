@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* ===========================================================
+                     commom css start
+============================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+div,
+span {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --primary_color: #1c1e53;
+  --text_color: #282938;
+  --white_color: #ffffff;
+}
+
+/* ===========================================================
+                     commom css end
+============================================================== */
+
+/* ===========================================================
+                    navbar css start
+============================================================== */
+
+nav {
+  padding: 32px 0;
+  background-color: var(--primary_color);
+}
+
+nav .menu_parent {
+  display: flex;
+  align-items: center;
+}
+
+nav .menu_parent .menu_item {
+  padding-left: 452px;
+  padding-right: 48px;
+}
+
+nav .menu_parent .menu_item ul {
+  display: flex;
+  column-gap: 32px;
+}
+
+nav .menu_parent .menu_item ul li a {
+  font-family: var(--poppins);
+  color: #bbbbcb;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+}
+
+nav .menu_parent .menu_item ul li a:hover {
+  color: var(--white_color);
+}
+
+nav .menu_parent .contact_button button {
+  padding: 16px 48px;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  color: #bbbbcb;
+  background-color: #1c1e53;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+nav .menu_parent .contact_button button:hover {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+/* ===========================================================
+                    navbar css end
+============================================================== */
+
+/* ===========================================================
+                    banner css start
+============================================================== */
+#banner_part {
+  padding: 128px 0;
+}
+
+#banner_part .banner_element {
+  text-align: center;
+}
+
+#banner_part .banner_element h1 {
+  color: var(--text_color);
+  font-family: var(--poppins);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  padding: 0 190px;
+  margin-bottom: 16px;
+}
+
+#banner_part .banner_element p {
+  color: var(--text_color);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+#banner_part .banner_element h5 {
+  color: var(--text_color, #282938);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 40px 288px 16px;
+}
+
+#banner_part .banner_element a {
+  color: var(--Royal-Blue, #2405f2);
+  text-align: center;
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 400;
+}
+/* ===========================================================
+                    banner css end
+============================================================== */
+
+/* ===========================================================
+                    blog part css start
+============================================================== */
+
+#blog_part {
+  padding: 0 0 128px;
+}
+
+#blog_part .blog_title {
+  color: var(--text_color);
+  font-family: var(--poppins);
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#blog_part .box_main {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+#blog_part .blog_card {
+  width: 405px;
+  transition: all linear 0.2s;
+}
+
+#blog_part .blog_card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+#blog_part .blog_card .blog_card_text {
+  padding: 0 15px 10px;
+}
+
+#blog_part .blog_card .blog_card_text p {
+  color: var(--text_color);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 32px 0 16px;
+}
+
+#blog_part .blog_card .blog_card_text h5 {
+  color: var(--text_color);
+  font-family: var(--poppins);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+#blog_part .blog_card .blog_card_text .details {
+  color: var(--text_color);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#blog_part .blog_card .blog_card_text a {
+  color: var(--primary_color);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+/* ===========================================================
+                    blog part css end
+============================================================== */
+
+/* ===========================================================
+                    footer part css start
+============================================================== */
+#footer_part {
+  padding: 96px 0 0;
+  background-color: var(--primary_color);
+}
+
+#footer_part .footer_wrapper {
+  display: flex;
+  column-gap: 300px;
+  align-items: flex-start;
+}
+
+#footer_part .footer_wrapper .footer_left p {
+  color: var(--white_color);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.8;
+  margin-top: 22px;
+}
+
+#footer_part .footer_wrapper .footer_left .contact_info {
+  display: flex;
+  background-color: #fcd980;
+  padding: 18px 37px;
+  column-gap: 29px;
+  margin-top: 86px;
+}
+
+#footer_part .footer_wrapper .footer_left .contact_info .email h4 {
+  color: var(--primary_color, #282938);
+  font-family: var(--poppins);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#footer_part .footer_wrapper .footer_left .contact_info .email a {
+  color: var(--primary_color, #282938);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+#footer_part .footer_wrapper .footer_right h2 {
+  color: var(--white_color);
+  font-family: var(--poppins);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+#footer_part .footer_wrapper .footer_right p {
+  color: var(--white_color, #f4f6fc);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+#footer_part .footer_wrapper .footer_right .icons {
+  margin-top: 28px;
+}
+
+#footer_part .footer_wrapper .footer_right .icons a {
+  color: white;
+  margin-right: 15px;
+  transition: all linear 0.3s;
+}
+
+#footer_part
+  .footer_wrapper
+  .footer_right
+  .icons
+  a
+  i[class="fa-brands fa-facebook-f"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(10, 79, 240);
+  color: white;
+  line-height: 30px;
+  text-align: center;
+}
+
+#footer_part
+  .footer_wrapper
+  .footer_right
+  .icons
+  a
+  i[class="fa-brands fa-twitter"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(77, 128, 247);
+  color: white;
+  line-height: 30px;
+  text-align: center;
+}
+
+#footer_part
+  .footer_wrapper
+  .footer_right
+  .icons
+  a
+  i[class="fa-brands fa-instagram"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fa7e1e;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+}
+
+#footer_part
+  .footer_wrapper
+  .footer_right
+  .icons
+  a
+  i[class="fa-brands fa-linkedin-in"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0766ad;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+}
+
+#footer_part .footer_wrapper .footer_right .icons a:hover {
+  transform: translateY(-30%);
+}
+
+#footer_part
+  .footer_wrapper
+  .footer_right
+  .icons
+  a:hover
+  i[class="fa-brands fa-facebook-f"] {
+  background-color: #fa7e1e;
+}
+/* ===========================================================
+                    footer part css end
+============================================================== */
+
+/* ===========================================================
+                    footer bottom part css start
+============================================================== */
+#footer_bottom_part {
+  padding: 32px 0;
+  background-color: var(--white_color);
+}
+
+#footer_bottom_part .footer_bottom_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer_bottom_part .footer_bottom_wrapper .fb_left a {
+  color: var(--primary_color);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fb_right ul {
+  display: flex;
+  column-gap: 32px;
+}
+
+#footer_bottom_part .footer_bottom_wrapper .fb_right ul li a {
+  color: var(--primary_color);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 500;
+}
+/* ===========================================================
+                    footer bottom part css end
+============================================================== */
